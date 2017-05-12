@@ -1,0 +1,50 @@
+{
+  "name": "css-dedoupe",
+  "version": "0.1.0",
+  "description": "Remove duplicate properties and declarations from your CSS",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/css-dedoupe.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/css-dedoupe",
+  "bugs": "https://github.com/tiaanduplessis/css-dedoupe/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "bin": {
+    "css-dedoupe": "cli.js"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "pretest": "npm run lint:fix",
+    "test": "jest --env=node",
+    "test:watch": "npm test -- --watch",
+    "coverage": "npm test -- --coverage",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "css",
+    "parse",
+    "clean",
+    "prune",
+    "purge",
+    "dedoupe",
+    "remove",
+    "css-dedoupe"
+  ],
+  "dependencies": {
+    "css": "^2.2.1",
+    "obj-to-css": "^1.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "standard": "^10.0.1"
+  }
+}
