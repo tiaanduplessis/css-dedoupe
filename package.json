@@ -1,6 +1,6 @@
 {
   "name": "css-dedoupe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Remove duplicate properties and declarations from your CSS",
   "license": "MIT",
   "main": "index.js",
