@@ -1,3 +1,6 @@
+<div align="center">
+	<img width="30%" src="media/funnel.png" alt="">
+</div>
 <h1 align="center">css-dedoupe</h1>
 <div align="center">
   <strong>Remove duplicate properties and declarations from your CSS</strong>
@@ -59,9 +62,14 @@
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#cli">CLI</a></li>
+	<li><a href="#issues">Issues</a></li>
   <li><a href="#contribute">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
+
+## About
+
+This is a basic module that walks a AST built with [reworkcss](github.com/reworkcss/css) and removes duplicate CSS properties associated with a specific selector. Only keeping the most recent.
 
 ## Install
 
@@ -83,7 +91,20 @@ console.log(cssDedoupe(cssStr)) // '.float-right{float:right}'
 
 ## CLI
 
-WIP 🔨
+```sh
+$ css-dedoupe input.css output.css
+```
+
+Or if you would like to modify the input file directly:
+
+```sh
+$ css-dedoupe inputAndOutput.css
+```
+
+## Issues
+
+- Currently only supports to level declartions e.g. does not dedoupe declartions in media queries.
+- The module makes no attempt to format the css after dedouping. Use modules like [csscomb](https://github.com/csscomb/csscomb.js) for this.
 
 ## Contribute
 
@@ -94,3 +115,5 @@ Note: If editing the README, please conform to the [standard-readme](https://git
 ## License
 
 Licensed under the MIT License.
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
