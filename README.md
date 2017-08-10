@@ -62,7 +62,7 @@
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#cli">CLI</a></li>
-	<li><a href="#issues">Issues</a></li>
+  <li><a href="#issues">Issues</a></li>
   <li><a href="#contribute">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
@@ -103,7 +103,7 @@ $ css-dedoupe inputAndOutput.css
 
 ## Issues
 
-- Currently only supports to level declartions e.g. does not dedoupe declartions in media queries.
+- Currently only supports top level declartions e.g. does not dedoupe declartions in media queries.
 - The module makes no attempt to format the css after dedouping. Use modules like [csscomb](https://github.com/csscomb/csscomb.js) for this.
 
 ## Contribute
