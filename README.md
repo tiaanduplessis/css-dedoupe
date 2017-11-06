@@ -69,6 +69,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/css-dedoupe.svg)](https://greenkeeper.io/)
+
 This is a basic module that walks a AST built with [reworkcss](github.com/reworkcss/css) and removes duplicate CSS properties associated with a specific selector. Only keeping the most recent.
 
 ## Install
