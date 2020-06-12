@@ -39,7 +39,7 @@
     "css-dedoupe"
   ],
   "dependencies": {
-    "css": "^2.2.1",
+    "css": "^2.2.4",
     "obj-to-css": "^1.0.0"
   },
   "devDependencies": {
