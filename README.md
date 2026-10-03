@@ -105,7 +105,8 @@ $ css-dedoupe inputAndOutput.css
 
 ## Issues
 
-- Currently only supports top level declartions e.g. does not dedoupe declartions in media queries.
+- Only dedupes top-level rules. Top-level comments, at-rules (including their nested contents), and rules containing comments between declarations are preserved verbatim and separate independently deduped runs of rules. Comments embedded in selectors or declaration values are handled by the parser.
+- Within each run, matching selectors are grouped at their first occurrence and the most recent property value wins. Different selectors are not checked for overlap, so this is not a general-purpose, cascade-aware CSS optimizer.
 - The module makes no attempt to format the css after dedouping. Use modules like [csscomb](https://github.com/csscomb/csscomb.js) for this.
 
 ## Contribute
